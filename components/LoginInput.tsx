@@ -16,7 +16,8 @@ const LoginInput = ({placeholderTxt}: Props) => {
 const styles = StyleSheet.create({
     input: {
         color: 'black',
-        height: '15%',
+        minHeight: '5%',
+        maxHeight: '10%',
         margin: '5%',
         borderRadius: 10,
         backgroundColor: 'white'

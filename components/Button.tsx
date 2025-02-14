@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
     btn: {
         backgroundColor: 'green',
         borderRadius: 10,
-        height: '15%',
+        minHeight: '10%',
+        maxHeight: '15%',
         margin: '5%',
         justifyContent: 'center',
         alignItems: 'center'

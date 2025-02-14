@@ -1,3 +1,4 @@
+import SignUpCard from "@/components/SignUpCard";
 import { StyleSheet, ImageBackground, Text } from "react-native";
 
 const SignUp = () => {
@@ -6,20 +7,26 @@ const SignUp = () => {
         source={require('@/assets/images/vacalo.jpg')}
         style={styles.backgroundImg}
         resizeMode='cover'>
-            <Text style={styles.text}>SignUp</Text>
+            <Text style={styles.titleText}>SignUp</Text>
+            <SignUpCard />
         </ImageBackground>
     );
 };
 
+//unificar as folhas para padroes (titleText por ex)
 const styles = StyleSheet.create({
     backgroundImg: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center'
     },
-    text: {
-        color: 'white',
-        marginLeft: '5%'
+    titleText: {
+      color: 'white',
+      alignSelf: 'left',
+      marginLeft: '5%',
+      marginBottom: '5%',
+      fontWeight: 'bold',
+      fontSize: 30
     }
   });
 

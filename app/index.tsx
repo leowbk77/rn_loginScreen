@@ -1,6 +1,5 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { StatusBar } from 'expo-status-bar';
 import { Link } from "expo-router";
 
 /* links
@@ -20,9 +19,8 @@ import { Link } from "expo-router";
 const LoginScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="dark"/>
       <Link href="/login" style={styles.btn}>
-        Tela de Login
+        <Text>Tela de Login</Text>
       </Link>
       <Link href="/sign-up" style={styles.btn}>
         Tela de Sign-up
@@ -39,6 +37,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   btn: {
+    flex: 1,
     backgroundColor: 'green',
     borderRadius: 10,
     height: '15%',
